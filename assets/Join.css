@@ -1,0 +1,130 @@
+body {
+    background-color: white;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+
+.topnav {
+    background-color: #ecffea;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    z-index: 3;
+    top:0px;
+}
+
+.img1 {
+  position: absolute;
+  left: 45px;
+  top: 10px;
+  z-index: 1;
+}
+
+.imgimg{
+  width: auto;
+  height: 100px;
+}
+
+.p2{
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+}
+
+.spacer {
+    height: 120px;
+}
+
+.main{
+    display: flex;
+}
+
+.info{
+    flex: 40%;
+    margin-left: 50px;
+}
+
+.map{
+    width: 100%;
+}
+
+.loc{
+    font-size: 20px;
+}
+
+.ul1{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.form{
+    flex: 60%;
+    margin-left: 75px;
+    width: 700;
+}
+
+@media (max-width: 1070px) {
+  .main {
+    display: block;
+    margin-right: 50px;
+  }
+
+  .map{
+    width: 75%;
+  }
+
+  .form{
+    width: 900;
+  }
+}
+
+/* bottom{ */
+  .bottom{
+    position: relative;
+    background-color: #bdd6bfbe;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    color: #5a7759;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  }
+  .bp1{
+    margin-left: 50px;
+    margin-top: 15px;
+    flex-basis: 175px;
+  }
+  .bp2{
+    margin-left: 50px;
+    margin-top: 15px;
+    flex-basis: 175px;
+  }
+  .bp3{
+    margin-top: 15px;
+    margin-left: 50px;
+    flex-basis: 300px;
+  }
+  .bp4{
+    margin-left: 50px;
+    margin-top: 15px;
+    flex-basis: 275px;
+  }
+
+  .Main{
+    font-size: 18px;
+  }
+  .Und{
+    font-size: 16px;
+    margin-left: 15px;
+    text-decoration: underline;
+    color: #5a7759;
+  }
+  
+  .bp2 .Und{
+    line-height: 33px;
+  }
+/* } */

@@ -1,0 +1,159 @@
+body {
+  background-color: white;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+
+.topnav {
+  background-color: #ecffea;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  z-index: 3;
+}
+
+.img1 {
+  position: absolute;
+  left: 45px;
+  top: 10px;
+  z-index: 1;
+}
+
+.imgimg {
+  width: auto;
+  height: 100px;
+}
+
+.heading {
+  position: relative;
+  font-size: 24px;
+  text-align: center;
+  top: 20px;
+}
+
+.spacer {
+  height: 120px;
+}
+
+.bios {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 55px;
+  margin-bottom: 50px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vivprof {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.andieprof {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vivimg {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.andieimg {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.words {
+  display: flex;
+  font-size: 17px;
+  line-height: 25px;
+  margin: 75px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.vivwords{
+  flex: 50%;
+  margin-right: 75px;
+}
+
+.andiewords{
+  flex: 50%;
+  margin-left: 75px;
+}
+
+.divider {
+  height: 5px;
+  position: relative;
+  display: block;
+  width: 50%;
+  background-color: #0b361f;
+  align-self: center;
+  margin: auto;
+}
+
+/* bottom{ */
+.bottom {
+  position: relative;
+  background-color: #bdd6bfbe;
+  height: auto;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  color: #5a7759;
+  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+
+.bp1 {
+  margin-left: 50px;
+  margin-top: 15px;
+  flex-basis: 175px;
+}
+
+.bp2 {
+  margin-left: 50px;
+  margin-top: 15px;
+  flex-basis: 175px;
+}
+
+.bp3 {
+  margin-top: 15px;
+  margin-left: 50px;
+  flex-basis: 300px;
+}
+
+.bp4 {
+  margin-left: 50px;
+  margin-top: 15px;
+  flex-basis: 275px;
+}
+
+.Main {
+  font-size: 18px;
+}
+
+.Und {
+  font-size: 16px;
+  margin-left: 15px;
+  text-decoration: underline;
+  color: #5a7759;
+}
+
+.bp2 .Und {
+  line-height: 33px;
+}
+
+/* } */
