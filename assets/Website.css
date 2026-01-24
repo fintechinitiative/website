@@ -171,13 +171,13 @@ body {
 
   .col0 {
     flex: 50%;
-    content:url(/Users/vivianzhong/VSC/FinLit.jpg);
+    content:url(images/FinLit.jpg);
     height: auto;
     width: 50%;
 }
 .col01 {
   flex: 50%;
-  content:url(/Users/vivianzhong/VSC/DigLit.jpg);
+  content:url(images/DigLit.jpg);
   height: auto;
   width: 50%;
 }
