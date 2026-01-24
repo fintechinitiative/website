@@ -296,7 +296,7 @@ body {
 .volunteer{
   position: relative;
   margin-bottom: 35px;
-  background-image: url("assets/images/volun.png");
+  background-image: url("images/volun.png");
   height: auto;
   
   background-attachment: fixed;
