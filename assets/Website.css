@@ -171,13 +171,13 @@ body {
 
   .col0 {
     flex: 50%;
-    background-image:url("images/FinLit.jpg");
+    content: url("images/C1.jpg");
     height: auto;
     /* width: 50%; */
 }
 .col01 {
   flex: 50%;
-  background-image:url("images/DigLit.jpg");
+  content: url("images/D1.jpg");
   height: auto;
   /* width: 50%; */
 }
