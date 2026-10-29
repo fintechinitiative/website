@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crypto Lab | FinTech Initiative</title>
+  <link rel="stylesheet" href="css/CryptoLab.css">
+  <script src="js/CryptoLab.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/DesignSystem.css">
+    <script src="js/SiteUI.js" defer></script>
+</head>
+
+<body>
+  <header class="topnav">
+    <a class="brand" href="index.html" aria-label="FinTech Initiative home"><span
+        class="brand-mark">F</span><span>FinTech Initiative</span></a>
+    <a class="back-link" href="FinancialLiteracy.html">← Financial Literacy</a>
+  </header>
+
+  <main class="page-shell">
+    <section id="lessonSection" class="hero">
+      <p class="eyebrow">LESSON</p>
+      <h1>Crypto Lab: Build a Blockchain</h1>
+      <p class="hero-copy">Create your own digital money: discover how to send it, keep track of it, and protect it!</p>
+      <div class="hero-tags"><span>Learn by doing</span><span>No account needed</span><span>Progress saved on this
+          device</span></div>
+    </section>
+
+    <section class="lesson-layout" aria-label="Lesson and progress">
+      <aside class="progress-panel">
+        <div class="progress-head"><strong>Your journey</strong><span id="progressText">1 of 12</span></div>
+        <div class="progress-track">
+          <div id="progressBar"></div>
+        </div>
+        <nav id="sectionMap" class="section-map" aria-label="Lesson sections"></nav>
+        <button id="resetProgress" class="text-button" type="button">Reset lesson progress</button>
+      </aside>
+
+      <section class="lesson-card" aria-live="polite">
+        <div class="slide-meta"><span id="slideSection">PART 1</span><span id="slideCount">SLIDE 1 / 12</span></div>
+        <div id="slideContent" class="slide-content"></div>
+        <div class="slide-controls">
+          <button id="prevSlide" class="button button-secondary" type="button">← Back</button>
+          <div id="slideDots" class="slide-dots" aria-label="Slides in this section"></div>
+          <button id="nextSlide" class="button" type="button">Next →</button>
+        </div>
+      </section>
+    </section>
+
+    <section id="miningLab" class="activity-section mining-locked">
+      <div class="section-intro">
+        <p class="eyebrow">ACTIVITY</p>
+        <h2>Mining puzzle</h2>
+        <p>
+          Miners try different numbers until a block's hash meets a target.
+          Can you find a winning number for your blocks?
+        </p>
+      </div>
+
+      <div class="mining-card">
+        <div class="mining-top">
+          <div>
+            <br>
+            <p class="mining-label">YOUR MINING NUMBER (NONCE)</p>
+            <label for="nonceInput">
+              Enter a number between <span id="nonceRange">1 and 1000</span>
+            </label>
+            <div class="nonce-controls">
+              <input id="nonceInput" type="number" min="1" max="1000" placeholder="Enter a number">
+              <button id="guessNonce" class="button" type="button">
+                Try number
+              </button>
+            </div>
+            <p id="miningFeedback" class="feedback" role="status" aria-live="polite">
+              Try a number. Your goal is to find a hash that starts with the target below.
+            </p>
+          </div>
+          <div class="mining-stats">
+            <div class="stat-box">
+              <span>DIFFICULTY</span>
+              <strong id="miningDifficulty">Round 1 · 1 zero</strong>
+            </div>
+            <div class="stat-box">
+              <span>ATTEMPTS</span>
+              <strong id="miningAttempts">0</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="mining-transactions">
+          <h3>Transactions in this block</h3>
+          <p class="mining-help">
+            These transactions stay the same while you try different numbers.
+          </p>
+          <ol id="miningTransactions"></ol>
+        </div>
+
+        <div class="mining-result">
+          <div class="mining-result-heading">
+            <h3>Your block's hash</h3>
+            <span id="miningStatus" class="mining-status">Not mined yet</span>
+          </div>
+
+          <div id="miningHash" class="mining-hash">
+            Enter a number to calculate the hash.
+          </div>
+
+          <div class="mining-target">
+            <span>YOUR TARGET</span>
+            <code id="miningTarget">0...</code>
+          </div>
+
+          <div><br></div>
+
+          <div class="mining-action-buttons">
+            <button id="newMiningRound" class="button button-secondary" type="button" style="display: none;">
+              Next Round
+            </button>
+            <button id="returnToLesson" class="button button-secondary" type="button">
+              Return to Lesson
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <p class="fine-print">
+        This game uses a hash function, but the too-high/too-low clues are an extra guessing-game hint. Real mining
+        does not reveal whether a nonce
+        is too high or too low; miners generally have to keep trying candidates. This activity simplifies how a real
+        network selects and accepts blocks.
+      </p>
+    </section>
+
+    <section id="cb-activity" class="cb-activity" hidden>
+      <div class="cb-heading">
+        <h2>Build, Break & Repair a Blockchain</h2>
+        <p>
+          Connect each block using the previous block's hash,
+          then mine it to build your blockchain!
+        </p>
+      </div>
+
+      <div class="cb-toolbar">
+        <span id="cb-stage" class="cb-stage">Stage 1: Build</span>
+        <span id="cb-progress">1 of 4 blocks completed</span>
+      </div>
+
+      <div id="cb-alert" class="cb-alert" aria-live="polite"></div>
+
+      <div id="cb-chain" class="cb-chain"></div>
+
+      <div id="cb-change-details" class="cb-change-details" hidden>
+        <h3>Unexpected transaction change!</h3>
+        <p id="cb-change-explanation"></p>
+
+        <div class="cb-comparison">
+          <div>
+            <span>Original Transaction</span>
+            <p id="cb-old-transaction"></p>
+          </div>
+          <div>
+            <span>Changed Transaction</span>
+            <p id="cb-new-transaction"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mining stays outside the block cards -->
+      <div id="cb-miner" class="cb-miner" hidden>
+        <h3 id="cb-miner-title">Mine Block 2</h3>
+        <p>
+          Find the secret nonce between 1 and 10.
+          The correct answer produces a hash beginning with 0.
+        </p>
+
+        <label for="cb-nonce">Enter a nonce</label>
+
+        <div class="cb-miner-controls">
+          <input id="cb-nonce" type="number" min="1" max="10" step="1" placeholder="1–10" />
+          <button id="cb-try" type="button">Try Nonce</button>
+        </div>
+
+        <p id="cb-feedback" aria-live="polite"></p>
+        <p id="cb-attempts">Attempts: 0</p>
+      </div>
+
+      <div class="cb-actions">
+        <button id="cb-complete" type="button" hidden>
+          Complete Chain
+        </button>
+
+        <button id="cb-start-repair" type="button" hidden>
+          Start Repair
+        </button>
+
+        <button id="cb-skip" type="button" hidden>
+          Skip Animation
+        </button>
+
+        <div>
+          <button id="cb-play-again" type="button" hidden>
+            Play Again
+          </button>
+        </div>
+
+      </div>
+
+      <div id="cb-finish" class="cb-finish" hidden>
+        <h3>Congratulations! Blockchain Repaired!</h3>
+        <p>
+          You successfully reconnected and re-mined the
+          affected blocks!
+        </p>
+        <p>
+          Changing old blockchain data means the following
+          blocks must be updated too. Real networks also
+          independently verify which history to accept.
+        </p>
+      </div>
+
+      <div>
+        <button id="returnToChainLesson" class="button button-secondary" type="button">
+          Return to Lesson
+        </button>
+      </div>
+    </section>
+
+
+  </main>
+  <footer><span>FinTech Initiative</span><span>Learn the idea. Question the model. Keep exploring.</span></footer>
+</body>
+
+</html>
