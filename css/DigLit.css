@@ -1,0 +1,157 @@
+body {
+    background-color: white;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+
+.topnav {
+    background-color: #ecffea;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    z-index: 3;
+}
+
+.img1 {
+  position: absolute;
+  left: 45px;
+  top: 10px;
+  z-index: 1;
+}
+
+.imgimg{
+    width: auto;
+    height: 100px;
+}
+
+.heading{
+    position: relative;
+    font-size: 24px;
+    text-align: center;
+    top: 22px;
+}
+
+.gap{
+    height:120px;
+}
+
+.mainimg{
+    width: 80%;
+   display: block;
+   margin: auto;
+   margin-top: 50px;
+}
+
+.main{
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    line-height: 1.5;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.divider{
+    height: 5px;
+    position: relative;
+    display: block;
+    width: 50%;
+    background-color: #0b361f;
+    align-self: center;
+    margin: auto;
+}
+
+.encase{
+    display: flex;
+    margin: 35px;
+}
+
+@media (max-width: 800px) {
+    .encase{
+        display: block;
+    }    
+}
+
+.half1{
+    flex: 55%;
+}
+
+.half2{
+    flex: 45%;
+}
+
+.titles{
+    font-size: 20px;
+}
+
+.text{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+.button{
+    background-color: #cef2c9;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+    border: none;
+    text-decoration: none;
+    color: black;
+    padding: 12px 18px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* bottom{ */
+  .bottom{
+    position: relative;
+    background-color: #bdd6bfbe;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    color: #5a7759;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  }
+  .bp1{
+    margin-left: 50px;
+    margin-top: 15px;
+    flex-basis: 175px;
+  }
+  .bp2{
+    margin-left: 50px;
+    margin-top: 15px;
+    flex-basis: 175px;
+  }
+  .bp3{
+    margin-top: 15px;
+    margin-left: 50px;
+    flex-basis: 300px;
+  }
+  .bp4{
+    margin-left: 50px;
+    margin-top: 15px;
+    flex-basis: 275px;
+  }
+
+  .Main{
+    font-size: 18px;
+  }
+  .Und{
+    font-size: 16px;
+    margin-left: 15px;
+    text-decoration: underline;
+    color: #5a7759;
+  }
+  
+  .bp2 .Und{
+    line-height: 33px;
+  }
+/* } */
