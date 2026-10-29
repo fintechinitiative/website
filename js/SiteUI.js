@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isLab = page === 'CryptoLab.html';
     // Replace only the navigation structure; retain page content and game controls.
     header.classList.add('site-header');
-    header.innerHTML = `<div class="nav-inner"><a href="index.html" class="site-brand" aria-label="FinTech Initiative home"><img src="images/Logo.png" alt="FinTech Initiative logo"></a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-links"><span></span><span></span><span></span></button><nav id="site-links" class="site-links" aria-label="Main navigation"><a href="FinancialLiteracy.html">Financial Literacy</a><a href="DigitalLiteracy.html">Digital Literacy</a><a href="AboutUs.html">About Us</a><a href="CryptoLab.html">Crypto Lab</a><a href="Join.html" class="nav-cta">Volunteer</a></nav></div>`;
+    header.innerHTML = `<div class="nav-inner"><a href="index.html" class="site-brand" aria-label="FinTech Initiative home"><img src="images/Logo.png" alt="FinTech Initiative logo"></a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-links"><span></span><span></span><span></span></button><nav id="site-links" class="site-links" aria-label="Main navigation"><a href="FinancialLiteracy.html">Financial Literacy</a><a href="DigitalLiteracy.html">Digital Literacy</a><a href="AboutUs.html">About Us</a><a href="CryptoLab.html">Crypto Lab</a><a href="Volunteer.html" class="nav-cta">Volunteer</a></nav></div>`;
     const toggle = header.querySelector('.nav-toggle');
     toggle.addEventListener('click', () => {
       const open = header.classList.toggle('nav-open');
